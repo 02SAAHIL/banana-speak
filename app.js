@@ -6,12 +6,15 @@
 var btnTranslate = document.querySelector("#btn-translate");
 // console.log(btnTranslate)
 var txtInput = document.querySelector("#txt-input");
+var outputDiv = document.querySelector("#output");
+// outputDiv.innerText("Saahil Verma");
 
 
 btnTranslate.addEventListener("click",  clickHandler)
 
 function clickHandler() {
-    console.log("clicked");
-    console.log("input",txtInput.value);
+    // console.log("clicked");
+    // console.log("input",txtInput.value);
+    outputDiv.innerText= "Translated:  "+ txtInput.value;
     };
 
